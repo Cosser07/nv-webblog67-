@@ -32,12 +32,12 @@ app.get('/users',function (req , res) {
        
 })
 
-app.post('user/', function(req,res){
+app.post('/user/', function(req,res){
     res.send('ทำการสร้างผู้ใช้งาน'+JSON.stringify(req.body))
 
 })
 
-app.put('user/:userId', function(req,res){
+app.put('/user/:userId', function(req,res){
     res.send('ทำการแก้ไขผู้ใช้งาน'+req.params.userId + ' : '+JSON.stringify(req.body))
 })
 
